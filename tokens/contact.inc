@@ -2,8 +2,8 @@
 
 function contact_civitoken_declare($token) {
   return [
-    $token . '.zgoda_na_wykorzystanie_wizerunku' => 'Zgoda na wykorzystanie wizerunku',
-    $token . '.zgoda_na_komunikacje_elektroniczna' => 'Zgoda na komunikację elektroniczną',
+    $token . '.zgoda_na_wykorzystanie_wizerunku' => 'Zgoda na wykorzystanie wizerunku (numeryczna)',
+    $token . '.zgoda_na_komunikacje_elektroniczna' => 'Zgoda na komunikację elektroniczną (numeryczna)',
     $token . '.rodzaj_zadan_wolontariusza' => 'Rodzaje zadań wolontariusza ( lista ul )',
   ];
 }
