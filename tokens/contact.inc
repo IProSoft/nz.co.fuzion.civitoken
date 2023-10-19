@@ -44,8 +44,8 @@ function contact_civitoken_get($cid, &$value) {
         $value['contact.rodzaj_zadan_wolontariusza'] .= '</ul>';
       }
 
-      $value['contact.zgoda_na_wykorzystanie_wizerunku'] = $contact['Zgody.zgoda_na_wykorzystanie_wizerunku'];
-      $value['contact.zgoda_na_komunikacje_elektroniczna'] = $contact['Zgody.zgoda_na_komunikacje_elektroniczna'];
+      $value['contact.zgoda_na_wykorzystanie_wizerunku'] = (int)$contact['Zgody.zgoda_na_wykorzystanie_wizerunku'];
+      $value['contact.zgoda_na_komunikacje_elektroniczna'] = (int)$contact['Zgody.zgoda_na_komunikacje_elektroniczna'];
     }
   } catch (\Exception $e) {
     watchdog('dontus',
